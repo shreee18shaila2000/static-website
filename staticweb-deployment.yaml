@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cafeapp2
+  labels:
+    app: cafeapp2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cafeapp2
+  template:
+    metadata:
+      labels:
+        app: cafeapp2
+    spec:
+      containers:
+      - name: staticwebapp99 
+        image: shailadocker123/cafeapp2:v2
+        ports:
+        - containerPort: 80
