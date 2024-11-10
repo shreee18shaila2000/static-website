@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cafeapp2
+  name: cafeapp
   labels:
-    app: cafeapp2
+    app: cafeapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cafeapp2
+      app: cafeapp
   template:
     metadata:
       labels:
-        app: cafeapp2
+        app: cafeapp
     spec:
       containers:
       - name: staticwebapp99 
