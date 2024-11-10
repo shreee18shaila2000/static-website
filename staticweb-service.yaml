@@ -10,5 +10,6 @@ spec:
     - port: 80
       targetPort: 80
       protocol: TCP
+      nodeport: 30069
   selector:
     app: staticweb
